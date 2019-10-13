@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://localhost:4000/group_projects/learned_sensing_dnn.html" />
 <meta property="og:site_name" content="Deep Learning in Imaging" />
 <script type="application/ld+json">
-{"description":"Computational Optics Lab","@type":"WebPage","url":"http://localhost:4000/group_projects/learned_sensing_dnn.html","headline":"Learned sensing: jointly optimized microscope hardware for accurate image classification","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/group_projects/learned_sensing_dnn.html","headline":"Learned sensing: jointly optimized microscope hardware for accurate image classification","description":"Computational Optics Lab","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Deep Learning in Imaging" /></head>
 <body><header class="site-header" role="banner">
@@ -52,6 +52,9 @@
 
 <h4 id="abstract">Abstract</h4>
 <p>Since its invention, the microscope has been optimized for interpretation by a human observer. With the recent development of deep learning algorithms for automated image analysis, there is now a clear need to re-design the microscope’s hardware for specific interpretation tasks. To increase the speed and accuracy of automated image classification, this work presents a method to co-optimize how a sample is illuminated in a microscope, along with a pipeline to automatically classify the resulting image, using a deep neural network. By adding a ‘‘physical layer’’ to a deep classification network, we are able to jointly optimize for specific illumination patterns that highlight the most important sample features for the particular learning task at hand, which may not be obvious under standard illumination. We demonstrate how our learned sensing approach for illumination design can automatically identify malaria-infected cells with up to 5-10\% greater accuracy than standard and alternative microscope lighting designs. We show that this joint hardware-software design procedure generalizes to offer accurate diagnoses for two different blood smear types, and experimentally show how our new procedure can translate across different experimental setups while maintaining high accuracy.</p>
+
+<p><img src="/assets/images/microscope.png" alt="Our setup" /></p>
+<div><small>Figure 1: We present a learned sensing network (LSN), which optimizes a microscope's illumination to improve the accuracy of automated image classification. (a) Standard optical microscope outfitted with an array of individually controllable LEDs for illumination. (b) Network training is accomplished with a large number of training image stacks, each containing Ns uniquely illuminated images. The proposed network's physical layer combines images within a stack via a weighted sum before classifying the result, where each weight corresponds to the relative brightness of each LED in the array. (c) After training, the physical layer returns an optimized LED illumination pattern that is displayed on the LED array to improve classification accuracies in subsequent experiments.</small></div>
 
 <h4 id="results">Results</h4>
 

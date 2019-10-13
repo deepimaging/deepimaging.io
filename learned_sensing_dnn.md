@@ -16,6 +16,11 @@ permalink: /group_projects/learned_sensing_dnn.html
 
 #### Abstract
  Since its invention, the microscope has been optimized for interpretation by a human observer. With the recent development of deep learning algorithms for automated image analysis, there is now a clear need to re-design the microscope's hardware for specific interpretation tasks. To increase the speed and accuracy of automated image classification, this work presents a method to co-optimize how a sample is illuminated in a microscope, along with a pipeline to automatically classify the resulting image, using a deep neural network. By adding a ''physical layer'' to a deep classification network, we are able to jointly optimize for specific illumination patterns that highlight the most important sample features for the particular learning task at hand, which may not be obvious under standard illumination. We demonstrate how our learned sensing approach for illumination design can automatically identify malaria-infected cells with up to 5-10\% greater accuracy than standard and alternative microscope lighting designs. We show that this joint hardware-software design procedure generalizes to offer accurate diagnoses for two different blood smear types, and experimentally show how our new procedure can translate across different experimental setups while maintaining high accuracy.
- 
+
+![Our setup](/assets/images/microscope.png)
+<div><small>Figure 1: We present a learned sensing network (LSN), which optimizes a microscope's illumination to improve the accuracy of automated image classification. (a) Standard optical microscope outfitted with an array of individually controllable LEDs for illumination. (b) Network training is accomplished with a large number of training image stacks, each containing Ns uniquely illuminated images. The proposed network's physical layer combines images within a stack via a weighted sum before classifying the result, where each weight corresponds to the relative brightness of each LED in the array. (c) After training, the physical layer returns an optimized LED illumination pattern that is displayed on the LED array to improve classification accuracies in subsequent experiments.</small></div>
+
+
 #### Results
+
  
