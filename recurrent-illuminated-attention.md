@@ -17,3 +17,5 @@ Recent machine learning techniques have dramatically chan-ged how we process dig
 
 #### Code and Data
 [Github](https://github.com/clvcooke/recurrent-illuminated-attention)
+[Fourier MNIST Dataset](https://www.kaggle.com/clvcooke/fourier-mnist-hard)
+[Malaria Dataset](https://www.kaggle.com/clvcooke/fourier-malaria)
