@@ -1,2 +1,6 @@
 .sass-cache
 .jekyll-metadata
+/projects/lsdnn/data*
+/projects/lsdnn/example*
+/_site/projects/lsdnn/data*
+/_site/projects/lsdnn/example*

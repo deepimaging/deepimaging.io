@@ -40,8 +40,8 @@ permalink: /group_projects/learned_sensing_dnn.html
 </center>
 
 #### Code and Data
-[Code]()
+[Code](/projects/lsdnn/example_CNN_code.zip)
 
-[Data]()
+[Data](/projects/lsdnn/data.zip)
 
-[README]()
+[README](/projects/lsdnn/README.txt)
