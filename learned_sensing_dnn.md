@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Learned sensing: jointly optimized microscope hardware for accurate image classification"
-permalink: /learned_sensing_dnn
+permalink: /learned_sensing_dnn/
 
 ---
 #### Alex Muthumbi<sup>1,+</sup>,Amey Chaware<sup>2,+</sup>, Kanghyun Kim<sup>2</sup>, Kevin Zhou<sup>3</sup>, Pavan Chandra Konda<sup>3</sup>, Richard Chen<sup>4</sup>, Benjamin Judkewitz<sup>5</sup>, Andreas Erdmann<sup>6,1</sup>, Barbara Kappes<sup>7</sup>, Roarke Horstmeyer<sup>2,3</sup>
